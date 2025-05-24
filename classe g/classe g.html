@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercedes-Benz Classe G</title>
+
+  <!-- Fonts e CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/animations.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="" alt="">
+    <h1>Mercedes-Benz Classe G</h1>
+  </header>
+
+  <!-- Intro -->
+  <section class="intro">
+    <h2>Eleganza senza tempo. Potenza senza compromessi.</h2>
+  </section>
+
+  <!-- Sezione: Design -->
+  <section class="section">
+    <div class="text">
+      <h3>Design Leggendario</h3>
+      <p>
+        Linee nette, stile inconfondibile e una presenza su strada che non passa inosservata.
+        La <span class="highlight">Classe G</span> è un’icona del design automobilistico.
+        Non segue le mode: le crea. È uno dei veicoli con il design più iconico e riconoscibile
+        nel mondo automobilistico. Il suo design leggendario non è frutto del caso, ma il risultato
+        di una lunga evoluzione che ha saputo unire funzionalità, prestigio e una forte identità estetica.
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://cdn.motor1.com/images/mgl/jlxge6/s3/mercedes-g500-on-caterpillar-tracks-by-delta-4x4.jpg" alt="Interni Classe G">
+    </div>
+  </section>
+
+  <!-- Sezione: Selezione dei modelli -->
+  <section class="hero-section">
+
+    <div class="card-container" >
+      <div class="card">     
+        <div class="card-background" style="background-image: url(https://cdn.motor1.com/images/mgl/Xg7yl/s1/brabus-black-ops-800.jpg)  ;"></div>
+        <div class="content">
+        <div class="card-category"> Macchina </div>  
+        <h4 class="card-heading">Mercedes-Benz G 500</h4>
+        <p2>Motore V8, comfort superiore e potenza equilibrata. Eleganza senza rinunciare alla sostanza.</p>
+        </div>
+      </div>  
+    
+      <div class="card">     
+          <div class="card-background" style="background-image: url(https://cdn.motor1.com/images/mgl/Xg7yl/s1/brabus-black-ops-800.jpg)  ;"></div>
+          <div class="content">
+            <div class="card-category"> Macchina </div>  
+            <h4 class="card-heading">Mercedes-AMG G 63</h4>
+            <p2>Prestazioni estreme, V8 biturbo da 585 CV, e assetto AMG per chi ama la guida sportiva.</p>
+          </div>
+      </div>  
+
+      <div class="card">     
+          <div class="card-background" style="background-image: url(https://statics.quattroruote.it/content/dam/quattroruote/it/news/nuovi-modelli/2024/04/24/mercedes_benz_classe_g_580_elettrica_motore_cavalli_interni_autonomia_ricarica_prestazioni_prezzo_/gallery/rbig/2024-Mercedes-Benz-Classe-G-580-011.jpg)  ;"></div>
+          <div class="content">
+            <div class="card-category"> Macchina </div>  
+            <h4 class="card-heading">Mercedes-Benz G 580 Electric</h4>
+            <p2>La rivoluzione elettrica della Classe G: zero emissioni, stessa anima fuoristrada.</p>
+          </div>
+      </div> 
+    </div>
+    </div>
+
+  </section>
+
+  <!-- Sezioni: Dettagli dei modelli -->
+  <section class="model-details" id="g500">
+    <h3>Mercedes-Benz G 500</h3>
+    <p>
+      Il Mercedes G 500 è una delle versioni più equilibrate e iconiche della Classe G.
+      Mantiene l’inconfondibile design squadrato e robusto, con dettagli storici come i fari rotondi,
+      le cerniere a vista e la ruota di scorta posteriore, simboli di un’identità forte e senza tempo.
+
+      Sotto il cofano monta un V8 biturbo da 4.0 litri con 422 CV, abbinato a un cambio automatico a 9 marce
+      e alla trazione integrale permanente 4MATIC, con tre differenziali bloccabili:
+      una combinazione che offre prestazioni elevate su strada e grandi capacità in fuoristrada.
+
+      All’interno, offre il lusso Mercedes: pelle Nappa, infotainment MBUX, sedili riscaldabili e ventilati,
+      finiture pregiate e tecnologie di assistenza alla guida avanzate.
+
+      Il G 500 è perfetto per chi vuole un SUV di lusso autentico, potente ma non estremo come l’AMG,
+      con vera anima da fuoristrada e uno stile iconico e raffinato.
+      Un veicolo che unisce tradizione, performance e comfort, diventando una vera leggenda contemporanea.
+    </p>
+  </section>
+
+  <section class="model-details" id="amgg63">
+    <h3>Mercedes-AMG G 63</h3>
+    <p>
+      Il G 63 è la versione più sportiva e potente della Classe G.
+      Con il suo motore V8 biturbo da 585 cavalli, è l'auto perfetta per chi cerca prestazioni senza compromessi.
+    </p>
+  </section>
+
+  <section class="model-details" id="g580electric">
+    <h3>Mercedes-Benz G 580 Electric</h3>
+    <p>
+      Il G 580 Electric è il futuro della Classe G: motore elettrico, tecnologia avanzata,
+      e un'incredibile capacità fuoristrada senza emissioni.
+      Perfetto per l'eco-consapevole amante dell'avventura.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Mercedes-Benz Italia. Tutti i diritti riservati.
+  </footer>
+
+  <!-- Script per la visualizzazione dei dettagli -->
+  <script>
+    function showDetails(model) {
+      const allDetails = document.querySelectorAll('.model-details');
+      allDetails.forEach(detail => {
+        detail.classList.remove('active');
+      });
+
+      const selectedDetail = document.getElementById(model);
+      selectedDetail.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
