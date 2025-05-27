@@ -8,7 +8,7 @@ html,body{
     }
 
     body {
-      color: #222;
+     color: #c0a062;
       background-color: #f2f2f2;
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -65,7 +65,7 @@ html,body{
       display: none;
     }
   header {
-      background: url('https://images.unsplash.com/photo-1597002472222-b57ab65a0167') no-repeat center center/cover;
+      background: url('https://www.youtube.com/watch?v=siO1ZpNYNN4') no-repeat center center/cover;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -123,4 +123,15 @@ html,body{
   .ImmagineCLasseGDesign{
     position: relative;
     float: center;
+  }
+
+  .tabella {
+     color: #c0a062;
+  }
+
+  .linea_orizzontale {
+
+    height: 10px ;
+    width: 100% ;
+    background-color: gold;
   }
